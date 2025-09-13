@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>    
+</head>
+<body>
+    <video autoplay muted loop>
+    <source src="puzzleVideo.mp4" type="video/mp4">
+  </video>
+    <div id="main">
+        <h1 style="color: red;font-size: 80px;">Tic-Tac-Toe</h1>
+        <div id="game">
+            <div class="griditem" id="g1" onclick="playerTurn('g1')"></div>
+            <div class="griditem" id="g2" onclick="playerTurn('g2')"></div>
+            <div class="griditem" id="g3" onclick="playerTurn('g3')"></div>
+            <div class="griditem" id="g4" onclick="playerTurn('g4')"></div>
+            <div class="griditem" id="g5" onclick="playerTurn('g5')"></div>
+            <div class="griditem" id="g6" onclick="playerTurn('g6')"></div>
+            <div class="griditem" id="g7" onclick="playerTurn('g7')"></div>
+            <div class="griditem" id="g8" onclick="playerTurn('g8')"></div>
+            <div class="griditem" id="g9" onclick="playerTurn('g9')"></div>
+        </div>
+        <h1 id="turn" style="color: red;">X player turn</h1>
+        <h1 id="win" style="color: red;"></h1>
+        <button id="restart" onclick="restart()">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
